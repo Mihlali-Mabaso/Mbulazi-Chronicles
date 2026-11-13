@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fce5eb"><title>Mbulazi Chronicles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gate" class="gate"><div class="gate-card"><div class="gate-cats"></div><span class="eyebrow">A little place for us</span><h1>Mbulazi<br>Chronicles<span>♡</span></h1><p>Our little plans. Our big memories.</p><form id="unlock"><label for="pass">Our passcode</label><div class="pass-row"><input id="pass" type="password" inputmode="numeric" maxlength="12" placeholder="Enter passcode" autocomplete="current-password"><button class="primary" type="submit">Come in <span>→</span></button></div><small id="pass-error" class="error"></small></form><div class="gate-foot">made for two, with love <span>♥</span></div></div></div>
+  <div id="app" class="app hidden">
+    <header class="topbar"><a class="brand" href="#home"><span class="brand-heart">♡</span><span>Mbulazi <b>Chronicles</b></span></a><button class="avatar" title="Our shared space"><span>🐈‍⬛</span><span>🐈</span></button></header>
+    <main>
+      <section class="hero" id="home"><div class="hero-copy"><div class="eyebrow">YOUR LITTLE WORLD, TOGETHER</div><h1>Little plans.<br><em>Big memories.</em></h1><p>A home for all the things we can’t wait to do.</p><div class="hero-actions"><button class="primary" id="hero-add">Add a little plan <span>＋</span></button><span class="together">you + me <b>♥</b></span></div></div><div class="hero-art"><div class="halo"></div><div class="hero-sticker"><div class="mascot crop cuddle"></div><div class="floating-heart">♥</div></div><div class="spark s1">✦</div><div class="spark s2">✧</div><div class="hero-note">together<br>is our favorite place <span>♡</span></div></div></section>
+      <section class="stats"><div class="stat"><span class="stat-icon done-icon">✓</span><div><strong id="completed-count">0</strong><small>little adventures done</small></div></div><div class="stat-divider"></div><div class="stat"><span class="stat-icon wish-icon">♥</span><div><strong id="wishlist-count">0</strong><small>things on our wishlist</small></div></div><div class="stats-note">every plan starts<br>with a little <span>♡</span></div></section>
+      <section class="section-head"><div><div class="eyebrow">ALL THE THINGS WE’VE SAID</div><h2>Our little list <span>✦</span></h2></div><button class="text-btn" id="top-add">＋ Add a plan</button></section>
+      <div class="tabs" role="tablist"><button class="tab active" data-filter="all">Everything <span id="all-count">0</span></button><button class="tab" data-filter="plan">Our plans <span id="plan-count">0</span></button><button class="tab" data-filter="wishlist">Wishlist <span id="wish-count">0</span></button><div class="tabs-spacer"></div><button class="view-btn active" title="Grid view" aria-label="Grid view">▦</button><button class="view-btn" title="List view" aria-label="List view">☰</button></div>
+      <div id="cards" class="cards"></div>
+      <section class="bottom-banner"><div class="banner-mascots"><div class="mascot crop cuddle"></div></div><div><span class="eyebrow">ONE DAY AT A TIME</span><h2>Making our own<br>little <em>chronicle.</em></h2></div><div class="banner-stars">✦ <span>♡</span> ✧</div></section>
+    </main>
+    <footer><span>Mbulazi Chronicles <b>♥</b></span><span>our story, one little plan at a time</span></footer>
+  </div>
+  <div id="modal" class="modal hidden"><div class="modal-backdrop" data-close></div><div class="modal-card"><button class="modal-close" data-close aria-label="Close">×</button><div class="eyebrow">A NEW LITTLE ADVENTURE</div><h2>Add to our story <span>♡</span></h2><form id="plan-form"><label for="title">What shall we do?</label><input id="title" name="title" required maxlength="100" placeholder="e.g. Watch the sunset together"><div class="form-grid"><div><label for="kind">Add to</label><select id="kind" name="kind"><option value="plan">Our plans</option><option value="wishlist">Wishlist</option></select></div><div><label for="category">Little category</label><select id="category" name="category"><option>Date idea</option><option>Adventure</option><option>Food & treats</option><option>At home</option><option>Travel</option><option>Just because</option></select></div></div><label for="note">A little note <span class="optional">(optional)</span></label><textarea id="note" name="note" rows="3" maxlength="500" placeholder="Any details to remember…"></textarea><label for="date">When? <span class="optional">(optional)</span></label><input id="date" name="date" type="date"><button type="submit" class="primary submit-btn">Save our plan <span>♡</span></button></form></div></div>
+  <script src="app.js"></script>
+</body></html>
